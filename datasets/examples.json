@@ -1,0 +1,74 @@
+[
+  {
+    "problem": "What is 15 + 27?",
+    "reasoning": "I need to add 15 and 27 together. I'll use the addition tool to compute this.",
+    "tool_calls": [{"tool": "add", "args": [15, 27]}],
+    "final_answer": "15 + 27 = 42"
+  },
+  {
+    "problem": "Calculate 50 - 23",
+    "reasoning": "I need to subtract 23 from 50. I'll use the subtraction tool for this calculation.",
+    "tool_calls": [{"tool": "subtract", "args": [50, 23]}],
+    "final_answer": "50 - 23 = 27"
+  },
+  {
+    "problem": "What's 12 + 8 - 5?",
+    "reasoning": "This is a multi-step problem. First I need to add 12 + 8, then subtract 5 from the result.",
+    "tool_calls": [
+      {"tool": "add", "args": [12, 8]},
+      {"tool": "subtract", "args": [20, 5]}
+    ],
+    "final_answer": "12 + 8 - 5 = 15. First: 12 + 8 = 20, then: 20 - 5 = 15"
+  },
+  {
+    "problem": "Compute 100 - 45 + 30",
+    "reasoning": "I need to solve this step by step. First subtract 45 from 100, then add 30 to the result.",
+    "tool_calls": [
+      {"tool": "subtract", "args": [100, 45]},
+      {"tool": "add", "args": [55, 30]}
+    ],
+    "final_answer": "100 - 45 + 30 = 85. First: 100 - 45 = 55, then: 55 + 30 = 85"
+  },
+  {
+    "problem": "What is 7 + 13?",
+    "reasoning": "This is a simple addition problem. I'll use the addition tool.",
+    "tool_calls": [{"tool": "add", "args": [7, 13]}],
+    "final_answer": "7 + 13 = 20"
+  },
+  {
+    "problem": "Calculate 88 - 19",
+    "reasoning": "I need to subtract 19 from 88 using the subtraction tool.",
+    "tool_calls": [{"tool": "subtract", "args": [88, 19]}],
+    "final_answer": "88 - 19 = 69"
+  },
+  {
+    "problem": "What's 25 + 17 - 9?",
+    "reasoning": "This requires two operations. First I'll add 25 + 17, then subtract 9 from that result.",
+    "tool_calls": [
+      {"tool": "add", "args": [25, 17]},
+      {"tool": "subtract", "args": [42, 9]}
+    ],
+    "final_answer": "25 + 17 - 9 = 33. Step by step: 25 + 17 = 42, then 42 - 9 = 33"
+  },
+  {
+    "problem": "Find 66 - 28 + 14",
+    "reasoning": "I'll solve this in order: first subtract 28 from 66, then add 14 to the result.",
+    "tool_calls": [
+      {"tool": "subtract", "args": [66, 28]},
+      {"tool": "add", "args": [38, 14]}
+    ],
+    "final_answer": "66 - 28 + 14 = 52. Breaking it down: 66 - 28 = 38, then 38 + 14 = 52"
+  },
+  {
+    "problem": "What is 33 + 44?",
+    "reasoning": "This is a straightforward addition. I'll use the addition tool to calculate 33 + 44.",
+    "tool_calls": [{"tool": "add", "args": [33, 44]}],
+    "final_answer": "33 + 44 = 77"
+  },
+  {
+    "problem": "Calculate 91 - 37",
+    "reasoning": "I need to subtract 37 from 91. I'll use the subtraction tool for this.",
+    "tool_calls": [{"tool": "subtract", "args": [91, 37]}],
+    "final_answer": "91 - 37 = 54"
+  }
+]
